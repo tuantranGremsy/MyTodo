@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <LinearLayout
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="@dimen/item_image"
+            android:layout_height="@dimen/item_image"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_arrow"/>
+        <TextView
+            android:id="@+id/tvTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginLeft="@dimen/component_margin"
+            android:layout_gravity="center_vertical"
+            android:text="Task"
+            android:textSize="@dimen/item_text"
+            android:textColor="@color/todo_item"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvPriority"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/component_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/item_priority"
+        android:layout_centerInParent="true"
+        android:text="Priority" />
+</RelativeLayout>
